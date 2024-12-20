@@ -51,11 +51,22 @@ We want to create employee shifts, splitting up the day into morning and evening
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
 
+In Type 1 SCD (the overwrite), when there is a change in a dimension attribute, the existing record is overwritten with the new value. No historical data is retained.
+
+In Type 2 SCD (the retain data), when there is a change in a dimension attribute, a new record is created with the updated value. Historical data is retained by keeping the old record.
+
+I would propose Type 1.  
+
+Privacy - Considering this is sensitive information, it would be best to minimize the data on hand.  
+
+Cost - More cost effective to retain less data
+
+relevancy - the old address is likely no longer relevant
+
+
+
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
-```
-Your answer...
-```
 
 ***
 
