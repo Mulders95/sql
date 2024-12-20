@@ -61,7 +61,7 @@ Privacy - Considering this is sensitive information, it would be best to minimiz
 
 Cost - More cost effective to retain less data
 
-relevancy - the old address is likely no longer relevant.
+relevancy - the old address is likely no longer relevant
 
 
 
